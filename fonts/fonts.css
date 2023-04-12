@@ -1,0 +1,109 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article,aside,canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* START */
+@font-face {font-family: "bangers"; src: url(../../../fonts/bangers/Bangers-Regular.ttf)}
+
+@font-face {font-family: "coda"; src: url(../../../fonts/coda/Coda-Regular.ttf), url(../../../fonts/coda/Coda-ExtraBold.ttf)}
+
+@font-face {font-family: "grover"; src: url(../../../fonts/irish-grover/IrishGrover-Regular.ttf)}
+
+@font-face {font-family: "lucky"; src: url(../../../fonts/luckiest-guy/LuckiestGuy-Regular.ttf)}
+
+@font-face {font-family: "mario"; src: url(../../../fonts/mario/mario.ttf)}
+
+@font-face {font-family: "nerko"; src: url(../../../fonts/nerko-one/NerkoOne-Regular.ttf)}
+
+@font-face {font-family: "orbitron"; src: url(../../../fonts/Orbitron/Orbitron-VariableFont_wght.ttf)}
+
+@font-face {font-family: "play"; src: url(../../../fonts/Play/Play-Regular.ttf), url(../../../fonts/Play/Play-Bold.ttf);}
+
+* {
+  color: #e1e1e1;
+  font-size: 1.2em !important;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333333;
+}
+
+p {
+  margin: 25px 0 0;
+}
+
+span {
+  font-weight: bold;
+}
+
+.orbitron {
+  font-family: "orbitron"
+}
+
+.play {
+  font-family: "play";
+}
+
+.nerko {
+  font-family: "nerko";
+}
+
+.bangers {
+  font-family: "bangers";
+}
+
+.coda {
+  font-family: "coda";
+}
+
+.lucky {
+  font-family: "lucky";
+}
+
+.mario {
+  font-family: "mario";
+}
+
+.mario256 {
+  font-family: "mario256";
+}

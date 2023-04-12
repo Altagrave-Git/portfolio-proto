@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Damon Turcotte | Web Developer</title>
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery.js"></script>
+</head>
+<body>
+  <header>
+    <div class="screw">
+      <svg height="30" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M877.452 521.529L705.663 220.904c-4.098-7.173-11.817-11.653-20.077-11.653h-343.17c-8.263 0-15.979 4.479-20.079 11.653L150.548 521.529a23.13 23.13 0 0 0 0 22.945l171.789 300.625a23.038 23.038 0 0 0 20.079 11.653h343.17a23.032 23.032 0 0 0 20.077-11.653l171.789-300.625a23.12 23.12 0 0 0 0-22.945zM672.167 810.501H355.835l-158.575-277.5 158.575-277.5h316.332l158.575 277.5-158.575 277.5z" fill="#70d8e1"></path><path d="M675.876 533.004h-23.125c-0.009 38.286-15.521 72.841-40.698 98.052-25.211 25.176-59.767 40.686-98.052 40.698-38.286-0.012-72.841-15.521-98.055-40.698-25.176-25.211-40.686-59.767-40.695-98.052 0.009-38.288 15.519-72.844 40.695-98.055 25.213-25.176 59.769-40.688 98.055-40.698 38.286 0.009 72.841 15.521 98.052 40.698 25.176 25.211 40.688 59.767 40.698 98.055h46.25c-0.046-102.069-82.933-184.956-185-185-102.067 0.044-184.956 82.931-185 185 0.044 102.067 82.933 184.954 185 184.998 102.067-0.044 184.954-82.931 185-184.998h-23.125z" fill="#10e8f1"></path></g></svg>
+    </div>
+
+    <div class="logo">
+      <svg id="pf-logo" width="80" height="60" viewBox="0 10 80 60" preserveAspectRatio="xMidYMid meet">
+        <g transform="translate(0.000000,81.000000) scale(0.100000,-0.100000)" stroke="none">
+          <path d="M525 598 c-113 -22 -131 -23 -197 -13 -60 9 -170 -24 -219 -65 -31
+            -26 -33 -30 -18 -45 15 -15 18 -14 48 14 29 27 51 39 51 27 0 -2 -11 -59 -25
+            -127 -14 -68 -23 -129 -21 -135 2 -6 0 -16 -5 -21 -6 -6 -2 -16 9 -27 18 -16
+            21 -15 63 20 69 57 178 166 205 204 l24 35 0 -116 c0 -100 3 -118 18 -132 10
+            -10 20 -17 23 -17 2 0 4 72 5 159 1 136 3 162 18 176 19 20 65 32 146 41 60 6
+            90 21 68 35 -20 13 -84 9 -193 -13z m-207 -68 c10 -17 19 -19 52 -14 50 8 52
+            -6 12 -62 -31 -43 -192 -197 -199 -191 -6 7 48 261 59 274 16 20 62 16 76 -7z
+            m131 -17 c0 -25 -1 -25 -8 -8 -5 11 -7 23 -4 28 8 14 13 7 12 -20z"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="screw">
+      <svg height="30" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M877.452 521.529L705.663 220.904c-4.098-7.173-11.817-11.653-20.077-11.653h-343.17c-8.263 0-15.979 4.479-20.079 11.653L150.548 521.529a23.13 23.13 0 0 0 0 22.945l171.789 300.625a23.038 23.038 0 0 0 20.079 11.653h343.17a23.032 23.032 0 0 0 20.077-11.653l171.789-300.625a23.12 23.12 0 0 0 0-22.945zM672.167 810.501H355.835l-158.575-277.5 158.575-277.5h316.332l158.575 277.5-158.575 277.5z" fill="#70d8e1"></path><path d="M675.876 533.004h-23.125c-0.009 38.286-15.521 72.841-40.698 98.052-25.211 25.176-59.767 40.686-98.052 40.698-38.286-0.012-72.841-15.521-98.055-40.698-25.176-25.211-40.686-59.767-40.695-98.052 0.009-38.288 15.519-72.844 40.695-98.055 25.213-25.176 59.769-40.688 98.055-40.698 38.286 0.009 72.841 15.521 98.052 40.698 25.176 25.211 40.688 59.767 40.698 98.055h46.25c-0.046-102.069-82.933-184.956-185-185-102.067 0.044-184.956 82.931-185 185 0.044 102.067 82.933 184.954 185 184.998 102.067-0.044 184.954-82.931 185-184.998h-23.125z" fill="#10e8f1"></path></g></svg>
+    </div>
+  </header>
+
+  <nav>
+    <ul id="nav-list">
+      <li class="nav-btn home active">
+        <svg class="nav-icon home" viewBox="0.25 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M22 12C22 6.49 17.51 2 12 2C6.49 2 2 6.49 2 12C2 14.9 3.25 17.51 5.23 19.34C5.23 19.35 5.23 19.35 5.22 19.36C5.32 19.46 5.44 19.54 5.54 19.63C5.6 19.68 5.65 19.73 5.71 19.77C5.89 19.92 6.09 20.06 6.28 20.2C6.35 20.25 6.41 20.29 6.48 20.34C6.67 20.47 6.87 20.59 7.08 20.7C7.15 20.74 7.23 20.79 7.3 20.83C7.5 20.94 7.71 21.04 7.93 21.13C8.01 21.17 8.09 21.21 8.17 21.24C8.39 21.33 8.61 21.41 8.83 21.48C8.91 21.51 8.99 21.54 9.07 21.56C9.31 21.63 9.55 21.69 9.79 21.75C9.86 21.77 9.93 21.79 10.01 21.8C10.29 21.86 10.57 21.9 10.86 21.93C10.9 21.93 10.94 21.94 10.98 21.95C11.32 21.98 11.66 22 12 22C12.34 22 12.68 21.98 13.01 21.95C13.05 21.95 13.09 21.94 13.13 21.93C13.42 21.9 13.7 21.86 13.98 21.8C14.05 21.79 14.12 21.76 14.2 21.75C14.44 21.69 14.69 21.64 14.92 21.56C15 21.53 15.08 21.5 15.16 21.48C15.38 21.4 15.61 21.33 15.82 21.24C15.9 21.21 15.98 21.17 16.06 21.13C16.27 21.04 16.48 20.94 16.69 20.83C16.77 20.79 16.84 20.74 16.91 20.7C17.11 20.58 17.31 20.47 17.51 20.34C17.58 20.3 17.64 20.25 17.71 20.2C17.91 20.06 18.1 19.92 18.28 19.77C18.34 19.72 18.39 19.67 18.45 19.63C18.56 19.54 18.67 19.45 18.77 19.36C18.77 19.35 18.77 19.35 18.76 19.34C20.75 17.51 22 14.9 22 12ZM16.94 16.97C14.23 15.15 9.79 15.15 7.06 16.97C6.62 17.26 6.26 17.6 5.96 17.97C4.44 16.43 3.5 14.32 3.5 12C3.5 7.31 7.31 3.5 12 3.5C16.69 3.5 20.5 7.31 20.5 12C20.5 14.32 19.56 16.43 18.04 17.97C17.75 17.6 17.38 17.26 16.94 16.97Z"></path> <path d="M12 6.92969C9.93 6.92969 8.25 8.60969 8.25 10.6797C8.25 12.7097 9.84 14.3597 11.95 14.4197C11.98 14.4197 12.02 14.4197 12.04 14.4197C12.06 14.4197 12.09 14.4197 12.11 14.4197C12.12 14.4197 12.13 14.4197 12.13 14.4197C14.15 14.3497 15.74 12.7097 15.75 10.6797C15.75 8.60969 14.07 6.92969 12 6.92969Z"></path> </g></svg>
+        <span>Home</span>
+      </li>
+      <li class="nav-btn skills">
+        <svg class="nav-icon skills" viewBox="-15 -20 270 270"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <g> <path d="M97.688,61.344h120c8.284,0,15-6.716,15-15s-6.716-15-15-15h-120c-8.284,0-15,6.716-15,15 S89.403,61.344,97.688,61.344z"></path> </g> <g> <path d="M217.688,101.344h-120c-8.284,0-15,6.716-15,15s6.716,15,15,15h120c8.284,0,15-6.716,15-15 S225.972,101.344,217.688,101.344z"></path> </g> <g> <path d="M217.688,171.344h-120c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h120c8.284,0,15-6.716,15-15 C232.688,178.06,225.972,171.344,217.688,171.344z"></path> </g> <g> <path d="M48.785,104.408l-9.989-1.452l-4.467-9.052c-1.264-2.56-3.87-4.181-6.726-4.181 c-2.854,0-5.462,1.621-6.726,4.181l-4.468,9.052l-9.988,1.452c-2.825,0.41-5.173,2.389-6.055,5.104 c-0.882,2.715-0.146,5.695,1.897,7.688l7.228,7.045l-1.707,9.949c-0.483,2.814,0.674,5.658,2.983,7.336 c1.307,0.95,2.853,1.433,4.409,1.433c1.193,0,2.392-0.285,3.489-0.861l8.936-4.698l8.936,4.698 c1.098,0.577,2.296,0.861,3.489,0.861c0.007,0,0.015,0,0.021,0c4.142-0.001,7.499-3.358,7.499-7.5 c0-0.629-0.077-1.241-0.223-1.825l-1.612-9.393l7.228-7.045c2.045-1.993,2.78-4.973,1.898-7.688 C53.958,106.797,51.61,104.818,48.785,104.408z"></path> </g> <g> <path d="M48.785,34.408l-9.989-1.452l-4.467-9.052c-1.264-2.56-3.87-4.181-6.726-4.181 c-2.854,0-5.462,1.621-6.726,4.181l-4.468,9.052l-9.988,1.452c-2.825,0.41-5.173,2.389-6.055,5.104 c-0.882,2.715-0.146,5.695,1.897,7.688l7.228,7.045l-1.707,9.949c-0.483,2.814,0.674,5.658,2.983,7.336 c1.307,0.95,2.853,1.433,4.409,1.433c1.193,0,2.392-0.285,3.489-0.861l8.936-4.698l8.936,4.698 c1.098,0.577,2.296,0.861,3.489,0.861c0.007,0,0.015,0,0.021,0c4.142,0,7.499-3.358,7.499-7.5c0-0.629-0.077-1.241-0.223-1.825 l-1.612-9.393l7.228-7.045c2.045-1.993,2.78-4.973,1.898-7.688C53.958,36.797,51.61,34.818,48.785,34.408z"></path> </g> <g> <path d="M48.785,174.408l-9.989-1.452l-4.467-9.052c-1.264-2.56-3.87-4.181-6.726-4.181 c-2.854,0-5.462,1.621-6.726,4.181l-4.468,9.052l-9.988,1.452c-2.825,0.41-5.173,2.389-6.055,5.104 c-0.882,2.715-0.146,5.695,1.897,7.688l7.228,7.045l-1.707,9.949c-0.483,2.814,0.674,5.658,2.983,7.336 c1.307,0.95,2.853,1.433,4.409,1.433c1.193,0,2.392-0.285,3.489-0.861l8.936-4.698l8.936,4.698 c1.098,0.577,2.296,0.861,3.489,0.861c0.007,0,0.015,0,0.021,0c4.142-0.001,7.499-3.358,7.499-7.5 c0-0.629-0.077-1.241-0.223-1.825l-1.612-9.393l7.228-7.045c2.045-1.993,2.78-4.973,1.898-7.688 C53.958,176.797,51.61,174.818,48.785,174.408z"></path> </g> </g> </g></svg>
+        <span>Skills</span>
+      </li>
+      <li class="nav-btn projects">
+        <svg class="nav-icon projects" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>work-case-filled</title> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="work-case" transform="translate(42.666667, 64.000000)"> <path d="M1.20792265e-13,197.76 C54.5835501,218.995667 112.186031,231.452204 170.666667,234.666667 L170.666667,277.333333 L256,277.333333 L256,234.666667 C314.339546,231.013 371.833936,218.86731 426.666667,198.613333 L426.666667,362.666667 L1.20792265e-13,362.666667 L1.20792265e-13,197.76 Z M277.333333,-1.42108547e-14 L298.666667,21.3333333 L298.666667,64 L426.666667,64 L426.666667,175.146667 C361.254942,199.569074 292.110481,212.488551 222.293333,213.333333 L222.293333,213.333333 L206.933333,213.333333 C136.179047,212.568604 66.119345,199.278929 7.10542736e-15,174.08 L7.10542736e-15,174.08 L7.10542736e-15,64 L128,64 L128,21.3333333 L149.333333,-1.42108547e-14 L277.333333,-1.42108547e-14 Z M256,42.6666667 L170.666667,42.6666667 L170.666667,64 L256,64 L256,42.6666667 Z" id="Combined-Shape-Copy"> </path> </g> </g> </g></svg>
+        <span>Portfolio</span>
+      </li>
+      <li class="nav-btn contact">
+        <svg class="nav-icon contact" viewBox="1 0.5 22 22" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3.0132 9.15129C3 9.69022 3 10.3021 3 11V13C3 15.8284 3 17.2426 3.87868 18.1213C4.75736 19 6.17157 19 9 19H15C17.8284 19 19.2426 19 20.1213 18.1213C21 17.2426 21 15.8284 21 13V11C21 10.3021 21 9.69022 20.9868 9.15129L12.9713 13.6044C12.3672 13.9399 11.6328 13.9399 11.0287 13.6044L3.0132 9.15129ZM3.24297 7.02971C3.32584 7.05052 3.4074 7.08237 3.48564 7.12584L12 11.856L20.5144 7.12584C20.5926 7.08237 20.6742 7.05052 20.757 7.02971C20.6271 6.55619 20.4276 6.18491 20.1213 5.87868C19.2426 5 17.8284 5 15 5H9C6.17157 5 4.75736 5 3.87868 5.87868C3.57245 6.18491 3.37294 6.55619 3.24297 7.02971Z"></path> </g></svg>  
+        <span>Contact</span>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="content home active">
+      <p class="about name">Damon Turcotte</p>
+      <p class="about job">Web Developer</p>
+      <p class="about bio">
+        Hi, I'm Damon, a full-stack web developer based in Lethbridge, Alberta. I have experience building everything from static websites, to games, APIs, databases and social media applications.
+      </p>
+    </div>
+
+    <div class="content skills">
+      <div class="skills-container">
+
+        <div class="skills-item">
+          <div>
+            <img style="height: 50px;" src="icons/html.svg">
+          </div>
+          <h6>HTML</h6>
+        </div>
+
+        <div class="skills-item">
+          <div>
+            <img style="height: 50px;" src="icons/css.svg">
+          </div>
+          <h6>CSS</h6>
+        </div>
+
+        <div class="skills-item">
+          <div>
+            <img style="height: 45px;" src="icons/sass.svg">
+          </div>
+          <h6>SCSS</h6>
+        </div>
+
+        <div class="skills-item">
+          <div>
+            <img style="height: 48px; border-radius: 5px;" src="icons/javascript.svg">
+          </div>
+          <h6>Javascript</h6>
+        </div>
+
+        <div class="skills-item">
+          <div>
+            <img style="height: 55px; padding: 0 0 3px" src="icons/jquery.svg">
+          </div>
+          <h6>jQuery</h6>
+        </div>
+
+        <div class="skills-item">
+          <div>
+            <img style="height: 45px;" src="icons/bootstrap.svg">
+          </div>
+          <h6>Bootstrap</h6>
+        </div>
+
+        <div class="skills-item">
+          <div>
+            <img style="height: 48px;" src="icons/python.svg">
+          </div>
+          <h6>Python</h6>
+        </div>
+
+        <div class="skills-item">
+          <div>
+            <img style="height: 52px;" src="icons/django.svg">
+          </div>
+          <h6>Django</h6>
+        </div>
+
+        <div class="skills-item">
+          <div>
+            <img style="height: 50px;" src="icons/postgresql.svg">
+          </div>
+          <h6>PostgreSQL</h6>
+        </div>
+
+        <div class="skills-item">
+          <div>
+            <img style="height: 55px;" src="icons/sqlite.svg">
+          </div>
+          <h6>SQLite</h6>
+        </div>
+
+        <div class="skills-item">
+          <div>
+            <img style="height: 45px;" src="icons/rest.svg">
+          </div>
+          <h6>Rest API</h6>
+        </div>
+
+        <div class="skills-item">
+          <div>
+            <img style="height: 55px;" src="icons/git.svg">
+          </div>
+          <h6>Git</h6>
+        </div>
+
+        <div class="skills-item">
+          <div>
+            <img style="height: 60px;" src="icons/linux.svg">
+          </div>
+          <h6>Linux</h6>
+        </div>
+
+        <div class="skills-item">
+          <div>
+            <img style="height: 60px;" src="icons/anaconda.svg">
+          </div>
+          <h6>Anaconda</h6>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="content projects">
+      <!-- Make a container with a custom interface to display a website thumbnail, title, and clickable icons -->
+      <div class="project-container">
+        <div class="project-thumbnail desktop">
+          <img src="images/echo-desktop.png" alt="Website Thumbnail">
+        </div>
+
+        <div class="project-thumbnail mobile-tall">
+          <img src="images/echo-mobile.png" alt="Website Thumbnail">
+        </div>
+
+        <div class="project-thumbnail mobile-wide">
+          <img src="images/echo-mobile-landscape.png" alt="Website Thumbnail">
+        </div>
+
+        <div class="project-meta">
+          <div class="project-info">
+              <h6 class="title">Echo</h6>
+              <p class="type">Social Network</p>
+              <div class="badges">
+                <img src="icons/django.svg">
+                <img src="icons/python.svg">
+                <img src="icons/javascript.svg">
+                <img src="icons/jquery.svg">
+                <img src="icons/postgresql.svg">
+              </div>
+          </div>
+
+          <div class="project-links">
+            <a target="_blank" href="https://github.com/Altagrave-Git/echo-socialnet">
+              <svg width="64px" height="64px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>github [#142]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g class="link-svg" id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> </g> </g> </g> </g></svg>
+            </a>
+            <a href="">
+              <svg class="link-svg" fill="#000000" width="64px" height="64px" viewBox="0 0 1920.00 1920.00" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M960 0c530.193 0 960 429.807 960 960s-429.807 960-960 960S0 1490.193 0 960 429.807 0 960 0Zm223.797 707.147c-28.531-29.561-67.826-39.944-109.227-39.455-55.225.657-114.197 20.664-156.38 40.315-100.942 47.024-178.395 130.295-242.903 219.312-11.616 16.025-17.678 34.946 2.76 49.697 17.428 12.58 29.978 1.324 40.49-9.897l.69-.74c.801-.862 1.591-1.72 2.37-2.565 11.795-12.772 23.194-25.999 34.593-39.237l2.85-3.31 2.851-3.308c34.231-39.687 69.056-78.805 115.144-105.345 27.4-15.778 47.142 8.591 42.912 35.963-2.535 16.413-11.165 31.874-17.2 47.744-21.44 56.363-43.197 112.607-64.862 168.888-23.74 61.7-47.405 123.425-70.426 185.398l-2 5.38-1.998 5.375c-20.31 54.64-40.319 108.872-53.554 165.896-10.575 45.592-24.811 100.906-4.357 145.697 11.781 25.8 36.77 43.532 64.567 47.566 37.912 5.504 78.906 6.133 116.003-2.308 19.216-4.368 38.12-10.07 56.57-17.005 56.646-21.298 108.226-54.146 154.681-92.755 47.26-39.384 88.919-85.972 126.906-134.292 12.21-15.53 27.004-32.703 31.163-52.596 3.908-18.657-12.746-45.302-34.326-34.473-11.395 5.718-19.929 19.867-28.231 29.27-10.42 11.798-21.044 23.423-31.786 34.92-21.488 22.987-43.513 45.463-65.634 67.831-13.54 13.692-30.37 25.263-47.662 33.763-21.59 10.609-38.785-1.157-36.448-25.064 2.144-21.954 7.515-44.145 15.046-64.926 30.306-83.675 61.19-167.135 91.834-250.686 19.157-52.214 38.217-104.461 56.999-156.816 17.554-48.928 32.514-97.463 38.834-149.3 4.357-35.71-4.9-72.647-30.269-98.937Zm63.72-401.498c-91.342-35.538-200.232 25.112-218.574 121.757-13.25 69.784 13.336 131.23 67.998 157.155 105.765 50.16 232.284-29.954 232.29-147.084.005-64.997-28.612-111.165-81.715-131.828Z" fill-rule="evenodd"></path> </g></svg>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="content contact">
+      <form id="contact-form">
+        <p class="title">Send a Message</p>
+        <div class="mail-inputs">
+          <div class="mail-inputs-2">
+            <input type="text" name="name" class="mail name" placeholder="Enter your name">
+            <input type="email" name="email" class="mail email" placeholder="youremail@example.com">
+          </div>
+          <textarea name="message" rows="4" class="mail message" placeholder="Write your message here..."></textarea>
+        </div>
+        <input class="mail submit" type="submit" value="Send">
+      </form>
+    </div>
+
+  </main>
+
+  <aside>
+    <div class="obscure top"></div>
+    <canvas id="canvas"></canvas>
+    <div class="obscure bottom"></div>
+  </aside>
+
+<script src="script.js"></script>
+</body>
+</html>
